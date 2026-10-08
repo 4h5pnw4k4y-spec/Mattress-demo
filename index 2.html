@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACKLINE MATTRESSES | Custom Comfort</title>
+<meta name="description" content="Premium custom-made mattresses designed around your comfort.">
+<style>
+:root{--black:#080808;--dark:#111;--mid:#1c1c1c;--light:#f5f5f2;--grey:#aaa;--line:#2b2b2b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--light);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,8,8,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;letter-spacing:3px}
+.logo span{font-weight:300;color:#aaa}
+.links{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+.links a:hover{color:#aaa}
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 24px 80px;background:
+radial-gradient(circle at 75% 35%,#353535 0,#171717 28%,#080808 65%),
+linear-gradient(120deg,#080808,#1c1c1c)}
+.hero-inner{max-width:1180px;width:100%;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;color:#aaa;font-size:12px;margin-bottom:20px}
+h1{font-size:clamp(48px,8vw,96px);line-height:.95;max-width:850px;letter-spacing:-4px}
+.hero p{max-width:610px;color:#c4c4c4;font-size:18px;margin:28px 0}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 25px;border:1px solid #fff;text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:bold}
+.btn.primary{background:#fff;color:#080808}
+.btn:hover{opacity:.8}
+section{padding:100px 24px}
+.wrap{max-width:1180px;margin:auto}
+.section-title{font-size:clamp(32px,5vw,58px);line-height:1.05;margin-bottom:18px}
+.muted{color:#aaa;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.card{background:var(--mid);border:1px solid var(--line);padding:32px;min-height:220px}
+.card .num{font-size:12px;color:#777;letter-spacing:2px}
+.card h3{font-size:22px;margin:30px 0 10px}
+.card p{color:#aaa}
+.range{background:#f2f2ef;color:#0b0b0b}
+.range .muted{color:#555}
+.range-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.product{background:#fff;border:1px solid #ddd;padding:30px;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end}
+.product h3{font-size:26px}
+.product p{color:#666;margin-top:8px}
+.quote{background:#111;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:35px;max-width:760px}
+input,select,textarea{width:100%;padding:16px;background:#0a0a0a;color:#fff;border:1px solid #333;font:inherit}
+textarea{min-height:140px;grid-column:1/-1}
+.form .full{grid-column:1/-1}
+footer{padding:35px 24px;color:#777;border-top:1px solid var(--line);font-size:13px}
+.mobile-btn{display:none;background:none;border:1px solid #555;color:#fff;padding:8px 12px}
+@media(max-width:760px){
+.links{display:none}.mobile-btn{display:block}
+.cards,.range-grid{grid-template-columns:1fr}
+.form{grid-template-columns:1fr}
+h1{letter-spacing:-2px}
+section{padding:75px 20px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#home">BLACKLINE <span>MATTRESSES</span></a>
+    <div class="links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#range">Our Range</a><a href="#why">Why Us</a><a href="#quote">Get a Quote</a>
+    </div>
+    <button class="mobile-btn" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">MENU</button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">Custom-made comfort</div>
+    <h1>Sleep made<br>just for you.</h1>
+    <p>Premium mattresses made to your size, your comfort and your lifestyle. Built with care. Designed to last.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#quote">Request a Quote</a>
+      <a class="btn" href="#range">Explore Our Range</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">The Blackline difference</div>
+    <h2 class="section-title">A better mattress starts<br>with your needs.</h2>
+    <p class="muted">Every sleeper is different. We create custom mattresses for standard and unusual sizes, helping you choose the feel and support that suits you.</p>
+    <div class="cards">
+      <div class="card"><div class="num">01 / CUSTOM</div><h3>Made to Measure</h3><p>Tell us the size you need and we'll build your mattress around it.</p></div>
+      <div class="card"><div class="num">02 / COMFORT</div><h3>Your Perfect Feel</h3><p>Choose a comfort level that feels right for the way you sleep.</p></div>
+      <div class="card"><div class="num">03 / QUALITY</div><h3>Built to Last</h3><p>Quality construction and carefully selected materials for everyday comfort.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="range" id="range">
+  <div class="wrap">
+    <div class="eyebrow">Our range</div>
+    <h2 class="section-title">Choose your comfort.</h2>
+    <p class="muted">A starting point for your custom mattress. We'll help you select the right option for your needs.</p>
+    <div class="range-grid">
+      <div class="product"><h3>Classic</h3><p>Balanced support for everyday sleeping.</p></div>
+      <div class="product"><h3>Luxury</h3><p>Extra comfort for a softer, more indulgent feel.</p></div>
+      <div class="product"><h3>Custom</h3><p>Special sizes, shapes and comfort requirements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why choose us</div>
+    <h2 class="section-title">Comfort without compromise.</h2>
+    <div class="cards">
+      <div class="card"><h3>Custom Sizes</h3><p>From standard beds to unique dimensions and spaces.</p></div>
+      <div class="card"><h3>Personal Service</h3><p>We help you choose the right mattress instead of guessing.</p></div>
+      <div class="card"><h3>Made for You</h3><p>Your mattress is made to match the specification you approve.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="eyebrow">Start your order</div>
+    <h2 class="section-title">Let's build your mattress.</h2>
+    <p class="muted">Send us your requirements and we'll get back to you with a custom quote.</p>
+    <form class="form" onsubmit="event.preventDefault(); alert('Thank you! Your quote request has been received.');">
+      <input placeholder="Your name" required>
+      <input type="tel" placeholder="Phone / WhatsApp" required>
+      <input placeholder="Mattress size (e.g. 180 × 200 cm)">
+      <select><option>Choose comfort</option><option>Medium</option><option>Firm</option><option>Extra Firm</option><option>Soft</option></select>
+      <textarea placeholder="Tell us what you need..."></textarea>
+      <button class="btn primary full" type="submit">Request My Quote</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 BLACKLINE MATTRESSES · Custom comfort, made for you.</div>
+</footer>
+</body>
+</html>
